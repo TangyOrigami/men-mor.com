@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Men-Mor Creations</title>
+	</head>
+	<body>
+		<header class="flex items-center justify-between bg-[#0d0d0d] px-4 py-3 md:px-6">
+			<a class="flex items-center gap-2 text-white" href="#" rel="ugc">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-6 w-6"
+					>
+				<path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+				</svg>
+				<span class="sr-only">Acme Inc</span>
+			</a>
+			<nav class="hidden md:flex items-center gap-4">
+				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+					Home
+				</a>
+				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+					About
+				</a>
+				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+					Services
+				</a>
+				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+					Contact
+				</a>
+			</nav>
+			<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-6 w-6 text-white"
+					>
+					<line x1="4" x2="20" y1="12" y2="12"></line>
+				<line x1="4" x2="20" y1="6" y2="6"></line>
+					<line x1="4" x2="20" y1="18" y2="18"></line>
+				</svg>
+				<span class="sr-only">Toggle navigation</span>
+			</button>
+		</header>
+		<section class="w-full mx-auto py-12 md:py-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900">
+			<div class="px-4 md:px-6 space-y-6">
+				<div class="text-center space-y-2">
+					<h2 class="text-3xl font-bold text-white">Contact Us</h2>
+					<p class="text-gray-200 dark:text-gray-300">Get in touch with our team for any inquiries or custom orders.</p>
+				</div>
+				<form class="grid gap-6">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<div class="space-y-2">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
+								for="name"
+								>
+								Name
+							</label>
+							<input
+							class="flex h-10 w-full rounded-md border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
+							id="name"
+							placeholder="Enter your name"
+							/>
+						</div>
+						<div class="space-y-2">
+							<label
+								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
+								for="email"
+								>
+								Email
+							</label>
+							<input
+							class="flex h-10 w-full rounded-md border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
+							id="email"
+							placeholder="Enter your email"
+							type="email"
+							/>
+						</div>
+					</div>
+					<div class="space-y-2">
+						<label
+							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
+							for="message"
+							>
+							Message
+						</label>
+						<textarea
+							class="flex w-full rounded-md border px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px] border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
+							id="message"
+							placeholder="Enter your message"
+						></textarea>
+					</div>
+					<button
+						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full md:w-auto bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white dark:bg-gradient-to-r dark:from-indigo-800 dark:via-purple-800 dark:to-pink-800 dark:hover:from-indigo-900 dark:hover:via-purple-900 dark:hover:to-pink-900"
+						type="submit"
+						>
+						Submit
+					</button>
+				</form>
+			</div>
+		</section>
+		<section id="#contact" class="w-full bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 py-12 md:py-20">
+			<div class="container max-w-4xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8">
+				<div class="space-y-4">
+					<h3 class="text-2xl font-bold text-indigo-900 dark:text-indigo-200">Visit Us</h3>
+					<div class="space-y-2">
+						<p class="text-indigo-700 dark:text-indigo-300">123 Main Street</p>
+						<p class="text-indigo-700 dark:text-indigo-300">Anytown, USA 12345</p>
+					</div>
+					<div class="space-y-2">
+						<p class="text-indigo-700 dark:text-indigo-300">Phone: (123) 456-7890</p>
+						<p class="text-indigo-700 dark:text-indigo-300">Email: info@artsandcrafts.com</p>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl font-bold text-indigo-900 dark:text-indigo-200">Business Hours</h3>
+					<div class="space-y-2">
+						<p class="text-indigo-700 dark:text-indigo-300">Monday - Friday: 9am - 6pm</p>
+						<p class="text-indigo-700 dark:text-indigo-300">Saturday: 10am - 4pm</p>
+						<p class="text-indigo-700 dark:text-indigo-300">Sunday: Closed</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
