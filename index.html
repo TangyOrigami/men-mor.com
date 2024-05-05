@@ -7,135 +7,105 @@
 		<title>Men-Mor Creations</title>
 	</head>
 	<body>
-		<header class="flex items-center justify-between bg-[#0d0d0d] px-4 py-3 md:px-6">
-			<a class="flex items-center gap-2 text-white" href="#" rel="ugc">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="h-6 w-6"
+		<header class="flex items-center justify-between bg-[#6B46C1] px-4 py-3 text-white shadow-sm md:px-6">
+			<nav class="hidden space-x-4 md:flex">
+				<a
+					class="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-[#805AD5] hover:text-white focus:bg-[#805AD5] focus:text-white focus:outline-none"
+					href="#Home"
+					rel="ugc"
 					>
-				<path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-				</svg>
-				<span class="sr-only">Acme Inc</span>
-			</a>
-			<nav class="hidden md:flex items-center gap-4">
-				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
 					Home
 				</a>
-				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+				<a
+					class="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-[#805AD5] hover:text-white focus:bg-[#805AD5] focus:text-white focus:outline-none"
+					href="#About"
+					rel="ugc"
+					>
 					About
 				</a>
-				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
-					Services
-				</a>
-				<a class="text-white hover:underline hover:underline-offset-4" href="#" rel="ugc">
+				<a
+					class="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium transition-colors hover:bg-[#805AD5] hover:text-white focus:bg-[#805AD5] focus:text-white focus:outline-none"
+					href="#Contact"
+					rel="ugc"
+					>
 					Contact
 				</a>
 			</nav>
-			<button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="h-6 w-6 text-white"
-					>
-					<line x1="4" x2="20" y1="12" y2="12"></line>
-				<line x1="4" x2="20" y1="6" y2="6"></line>
-					<line x1="4" x2="20" y1="18" y2="18"></line>
-				</svg>
-				<span class="sr-only">Toggle navigation</span>
-			</button>
 		</header>
-		<section class="w-full mx-auto py-12 md:py-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900">
-			<div class="px-4 md:px-6 space-y-6">
-				<div class="text-center space-y-2">
-					<h2 class="text-3xl font-bold text-white">Contact Us</h2>
-					<p class="text-gray-200 dark:text-gray-300">Get in touch with our team for any inquiries or custom orders.</p>
+		<section id="Home" class="relative w-full h-[80vh] flex items-center justify-center bg-gradient-to-r from-[#6366F1] to-[#EC4899] overflow-hidden">
+			<div class="container px-4 md:px-6 z-10 text-center text-white">
+				<h1 class="text-5xl md:text-6xl font-bold mb-4">Men-Mor Creations</h1>
+				<p class="text-xl md:text-2xl mb-8">Arts and Crafts. Love and Care.</p>
+			</div>
+			<div class="absolute inset-0 -z-10 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20 blur-lg"></div>
+		</section>
+
+		<section class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#F3E5F5] to-[#EDE7F6] dark:from-[#4A148C] dark:to-[#311B92]">
+			<div class="container px-4 md:px-6">
+				<div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+					<div class="space-y-4">
+						<div id="About" class="inline-block rounded-lg bg-[#E1BEE7] px-3 py-1 text-sm font-medium text-[#6B7280] dark:bg-[#7B1FA2] dark:text-[#D1D5DB]">
+							About Us
+						</div>
+						<h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4A148C] dark:text-[#F3E5F5]">
+							Men-Mor Creations
+						</h2>
+						<p class="text-[#673AB7] dark:text-[#D1D5DB]">
+							Welcome to Men-Mor Creations, a hubmle corner where creativity thrices and imagination blossoms.
+							Here, we celebrate the art of crafting with warmth and simplicity. With a glue gun and some imagination,
+							we fearlessly delve into the realms of creativity, transforming simple materials into extradordinary
+							masterpieces.
+						</p>
+						<p class="text-[#673AB7] dark:text-[#D1D5DB]">
+							Our infectious enthusiasm and boundless imagination invite you to join us on a cozy journey of 
+							crafting joy and endless inspiration.
+						</p>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<img
+						src="./assets/IMG-20240504-WA0003.jpg"
+						alt="Handmade wooden decor"
+						width="300"
+						height="300"
+						class="rounded-lg object-cover shadow-lg"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+						/>
+						<img
+						src="./assets/IMG-20240504-WA0005.jpg"
+						alt="Cozy textile creations"
+						width="300"
+						height="300"
+						class="rounded-lg object-cover shadow-lg"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+						/>
+						<img
+						src="./assets/IMG-20240504-WA0007.jpg"
+						alt="Artisanal pottery"
+						width="300"
+						height="300"
+						class="rounded-lg object-cover shadow-lg"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+						/>
+						<img
+						src="./assets/IMG-20240504-WA0009.jpg"
+						alt="Handwoven wall hangings"
+						width="300"
+						height="300"
+						class="rounded-lg object-cover shadow-lg"
+						style="aspect-ratio: 300 / 300; object-fit: cover;"
+						/>
+					</div>
 				</div>
-				<form class="grid gap-6">
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-						<div class="space-y-2">
-							<label
-								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
-								for="name"
-								>
-								Name
-							</label>
-							<input
-							class="flex h-10 w-full rounded-md border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
-							id="name"
-							placeholder="Enter your name"
-							/>
-						</div>
-						<div class="space-y-2">
-							<label
-								class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
-								for="email"
-								>
-								Email
-							</label>
-							<input
-							class="flex h-10 w-full rounded-md border px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
-							id="email"
-							placeholder="Enter your email"
-							type="email"
-							/>
-						</div>
-					</div>
-					<div class="space-y-2">
-						<label
-							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-gray-200 dark:text-gray-300"
-							for="message"
-							>
-							Message
-						</label>
-						<textarea
-							class="flex w-full rounded-md border px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px] border-gray-400 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 text-gray-900 dark:text-gray-50"
-							id="message"
-							placeholder="Enter your message"
-						></textarea>
-					</div>
-					<button
-						class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full md:w-auto bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white dark:bg-gradient-to-r dark:from-indigo-800 dark:via-purple-800 dark:to-pink-800 dark:hover:from-indigo-900 dark:hover:via-purple-900 dark:hover:to-pink-900"
-						type="submit"
-						>
-						Submit
-					</button>
-				</form>
 			</div>
 		</section>
-		<section id="#contact" class="w-full bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 py-12 md:py-20">
+
+		<section id="Contact" class="w-full bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 py-12 md:py-20">
 			<div class="container max-w-4xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8">
 				<div class="space-y-4">
-					<h3 class="text-2xl font-bold text-indigo-900 dark:text-indigo-200">Visit Us</h3>
+					<h3 class="text-2xl font-bold text-indigo-900 dark:text-indigo-200">Contact Us!</h3>
 					<div class="space-y-2">
-						<p class="text-indigo-700 dark:text-indigo-300">123 Main Street</p>
-						<p class="text-indigo-700 dark:text-indigo-300">Anytown, USA 12345</p>
-					</div>
-					<div class="space-y-2">
-						<p class="text-indigo-700 dark:text-indigo-300">Phone: (123) 456-7890</p>
-						<p class="text-indigo-700 dark:text-indigo-300">Email: info@artsandcrafts.com</p>
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl font-bold text-indigo-900 dark:text-indigo-200">Business Hours</h3>
-					<div class="space-y-2">
-						<p class="text-indigo-700 dark:text-indigo-300">Monday - Friday: 9am - 6pm</p>
-						<p class="text-indigo-700 dark:text-indigo-300">Saturday: 10am - 4pm</p>
-						<p class="text-indigo-700 dark:text-indigo-300">Sunday: Closed</p>
+						<p class="text-indigo-700 dark:text-indigo-300">Phone: +52 (897) 980-0404 </p>
+						<p class="text-indigo-700 dark:text-indigo-300">Email: isabelmendoza972@gmail.com</p>
 					</div>
 				</div>
 			</div>
